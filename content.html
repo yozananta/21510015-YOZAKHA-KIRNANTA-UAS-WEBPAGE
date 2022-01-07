@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Astronanta</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+</head>
+<body>
+	<div class="container">
+		<div class="navbar">
+			<img src="images/notflat.png" class="logo">
+			<nav>
+				<ul id="menuList">
+					<li><a href="index.html">Home</a></li>
+					<li><a href="content.html">Content</a></li>
+					<li><a href="profil.html">My Profile</a></li>
+				</ul>
+			</nav>
+			<img src="images/menu.png" class="menu-icon" onclick="togglemenu()">
+		</div>
+		<div class="heading">
+			<h3>Astro <span>Gallery</span></h3>
+		</div>
+		<div class="box">	
+			<div class="dream">
+				<img src="gallery/1.jpg">
+					<img src="gallery/2.jpg">
+					    <img src="gallery/3.jpg">
+					   		<img src="gallery/4.jpg">
+					   			<img src="gallery/5.jpg">
+			</div>
+			<div class="dream">
+				<img src="gallery/6.jpg">
+					<img src="gallery/7.jpg">
+					    <img src="gallery/8.jpg">
+					       <img src="gallery/9.jpg">
+					            <img src="gallery/10.jpg">
+			</div>
+			<div class="dream">
+				<img src="gallery/11.jpg">
+					<img src="gallery/12.jpg">
+					    <img src="gallery/13.jpg">
+					        <img src="gallery/14.jpg">
+					            <img src="gallery/15.jpg">
+			</div>		             
+		</div>
+		<footer>
+    	<div class="footer-content">
+    		<h3>Astronanta</h3>
+    		<p>The branch of science which deals with celestial objects, space, and the physical universe as a whole.</p>
+    		<ul class="socials">
+    			<li><a href="https://twitter.com/yozananta"><i class="fa fa-twitter"></i></a></li>
+    			<li><a href="https://www.instagram.com/yozananta/"><i class="fa fa-instagram"></i></a></li>
+    			<li><a href="https://www.youtube.com/channel/UCqcN99nN7M9l0ZYy45GlVJQ"><i class="fa fa-youtube"></i></a></li>
+    		</ul>
+    	</div>
+    	<div class="footer-bottom">
+    		<p>copyright &copy;Yozakha Kirnanta <span>2022</span></p>
+    	</div>
+    </footer>	
+	</div>
+
+		<script>
+		
+			var menuList = document.getElementById("menuList");
+
+			menuList.style.maxHeight = "0px";
+
+			function togglemenu(){
+
+				if(menuList.style.maxHeight == "0px")
+					{
+						menuList.style.maxHeight = "130px";
+					}
+				else
+					{	
+						menuList.style.maxHeight = "0px";
+					}
+			}
+		</script>
+</body>
+</html>
